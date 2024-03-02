@@ -1,3 +1,4 @@
+
 *{
     margin:0px;
     padding:0px;
@@ -14,11 +15,14 @@
 }
 .navbar{
     height:20px;
-    background-color:white;
-    color:black;
+    background-color:rgb(113, 179, 16);
     margin-top:80px;
+    display:flex;
 }
 .navbar a{
+    font-size:2rem;
     font-style:none;
     text-decoration:none;
+    color:rgb(13, 27, 13);
+    
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Store Bill Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Store Bill Generator</h1>
+        <form id="billForm">
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" required>
+            
+            <label for="plantName">Plant Name:</label>
+            <input type="text" id="plantName" required>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+            
+            <label for="price">Price:</label>
+            <input type="number" id="price" min="0.01" step="0.01" required>
+            
+            <button type="button" onclick="addItem()">Add Item</button>
+        </form>
+        
+        <div id="itemsList">
+            <!-- Items added dynamically will appear here -->
+        </div>
+        
+        <div id="totalSection">
+            <h3>Total:</h3>
+            <p id="subtotal">Subtotal: $0.00</p>
+            <p id="total">Total: $0.00</p>
+        </div>
+        
+        <button onclick="generateBill()">Generate Bill</button>
+        
+        <div id="billPreview">
+            <!-- Bill preview will appear here after generating -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
