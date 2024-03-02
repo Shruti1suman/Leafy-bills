@@ -114,38 +114,12 @@
     font-weight:700;
     margin-bottom:10px;
 }
-.foot_panel1{
-    height:50px;
-    color:#ffffff;
-    background-color:#222f3d;
-    font-size:0.85rem;
-    font-weight:600;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-.foot_panel2{
-    height:400px;
-    background-color:#0f1111;
-    color:#ffffff;
-    display:flex;
-    justify-content:space-evenly;
-}
-.foot_panel2 p{
-    font-weight:600;
-    margin-top:20px;
+#add-to-cart{
+    height:40px;
+    width: 100px;
     font-size:1rem;
-}
-.foot_panel2 a{
-    color:#cccccc;
-    font-size:0.85rem;
-    display:block;
-    margin-top:15px;
-}
-.foot_panel3{
-    height:100px;
-    background-color:#0f1111;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    font-weight:700;
+    color:white;
+    background-color:rgb(43, 92, 43);
+    margin-left:120px;
 }

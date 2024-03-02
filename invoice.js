@@ -54,3 +54,5 @@ tBody.addEventListener("click", (e)=>{
 delRow =(el)=> {
     el.parentNode.parentNode.parentNode.removeChild(el.parentNode.parentNode);
 }
+
+html2pdf().from(invoiceElement).set(options).save();
