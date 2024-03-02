@@ -41,18 +41,20 @@ overallSum =()=> {
     }
 }
 
+function downloadInvoice() {
+    // Get the element containing the invoice content
+    const invoice = document.getElementById("downloadPdf");
 
-    document.getElementById('table-body').addEventListener('click', function() {
-      const invoiceElement = document.getElementById('invoice');
-      const options = {
-        margin: 1,
-        filename: 'invoice.pdf',
+    // Options for html2pdf
+    const options = {
+        filename: 'Leafy Bills.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-      };
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
 
-      // Then call html2pdf with the element and options
-      html2pdf().from(invoiceElement).set(options).save();
-    });
+    // Generate PDF
+    html2pdf().from(invoice).set(options).save();
+}
+
   
