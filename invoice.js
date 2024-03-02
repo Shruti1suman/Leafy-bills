@@ -43,7 +43,7 @@ overallSum =()=> {
 
 function downloadInvoice() {
     // Get the element containing the invoice content
-    const invoice = document.getElementById("downloadPdf");
+    const invoice = document.getElementById("Para");
 
     // Options for html2pdf
     const options = {
