@@ -21,7 +21,7 @@ getInput =()=> {
         var unit = currentRow.querySelector("#unit").value;
         var price = currentRow.querySelector("#price").value;
 
-        Subtotal = unit * price;
+        Subtotal = UNIT * PRICE;
         currentRow.querySelector("#amount").value = Subtotal;
         overallSum();
 
