@@ -41,31 +41,19 @@ overallSum =()=> {
     }
 }
 
-//Delete row from the table
-tBody.addEventListener("click", (e)=>{
-    let el = e.target;
-    const deleteROW = e.target.getAttribute("action");
-    if(deleteROW == "delete") {
-        delRow(el);
-        overallSum();
-    }
-})
-
-//Target row and remove from DOM;
-delRow =(el)=> {
-    el.parentNode.parentNode.parentNode.removeChild(el.parentNode.parentNode);
-}
-
-document.getElementById('downloadPdf').addEventListener('click', function() {
-    const invoiceElement = document.getElementById('invoice');
-    const options = {
-
-        filename: 'Leafy Bills.pdf',
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function() {
+      const invoiceElement = document.getElementById('invoice');
+      const options = {
+        margin: 1,
+        filename: 'invoice.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
       };
 
-    // Then call html2pdf with the element and options
-    html2pdf().from(invoiceElement).set(options).save();
-  });
+      // Then call html2pdf with the element and options
+      html2pdf().from(invoiceElement).set(options).save();
+    });
+  </script>
 
