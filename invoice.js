@@ -42,7 +42,7 @@ overallSum =()=> {
 }
 
 
-    document.getElementById('downloadPdf').addEventListener('click', function() {
+    document.getElementById('table-body').addEventListener('click', function() {
       const invoiceElement = document.getElementById('invoice');
       const options = {
         margin: 1,
