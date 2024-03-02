@@ -59,6 +59,7 @@ document.getElementById('downloadPdf').addEventListener('click', function() {
     const invoiceElement = document.getElementById('invoice');
     const options = {
 
+        filename: 'Leafy Bills.pdf',
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'ISO A4', orientation: 'portrait' }
       };
