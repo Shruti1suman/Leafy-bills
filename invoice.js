@@ -59,8 +59,8 @@ document.getElementById('downloadPdf').addEventListener('click', function() {
     const invoiceElement = document.getElementById('invoice');
     const options = {
 
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        html2canvas: {  },
+        jsPDF: { unit: 'in', format: 'ISO A4', orientation: 'portrait' }
       };
 
     // Then call html2pdf with the element and options
