@@ -1,0 +1,24 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.head_box{
+    height:150px;
+    text-align:center;
+    background-color:rgb(8, 39, 8);
+}
+.head_box h1{
+    color:white;
+    font-size:30px;
+    font-style:italic;
+}
+.navbar{
+    height:20px;
+    background-color:white;
+    color:black;
+    margin-top:80px;
+}
+.navbar a{
+    font-style:none;
+    text-decoration:none;
+}
