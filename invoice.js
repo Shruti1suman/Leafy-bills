@@ -12,10 +12,7 @@ addNewRow =()=> {
     tBody.insertBefore(row, tBody.lastElementChild.previousSibling);
 }
 
-document.getElementById("add-row").addEventListener("click", (e)=> {
-    e.preventDefault();
-    addNewRow();
-});
+
 
 //GET INPUTS, MULTIPLY AND GET THE ITEM PRICE
 getInput =()=> {
