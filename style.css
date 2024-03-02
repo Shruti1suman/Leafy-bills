@@ -114,3 +114,12 @@
     font-weight:700;
     margin-bottom:10px;
 }
+#add-to-cart{
+    height:40px;
+    width: 100px;
+    font-size:1rem;
+    font-weight:700;
+    color:white;
+    background-color:rgb(43, 92, 43);
+    margin-left:120px;
+}
