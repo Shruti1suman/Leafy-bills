@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dynamic Invoice Generator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="invoice.css" />
+  </head>
+  <body>
+    <div class="invoice-container">
+      <div class="invoice-header">
+          <div class="title-date">
+              <h2 class="title">INVOICE</h2>
+              <h3 class="active">Customer Name:</h3>
+              <p class="date">02/03/24</p>
+          </div>
+          <div class="space"></div>
+          <p class="invoice-number">#12345</p>
+          
+      </div>
+      <div class="invoice-body">
+          <table>
+              <thead>
+                  <th style="padding-left:12px;">PLANT</th>
+                  <th>UNIT</th>
+                  <th>PRICE</th>
+                  <th>Subtotal</th>
+                  
+              </thead>
+
+              <tbody id="table-body">
+              <tr class="single-row">
+                  <td><input type="text" placeholder="Plant Name" class="product left"></td>
+                  <td><input type="number" placeholder="0" name="unit" class="unit" id="unit" onkeyup="getInput()"></td>
+                  <td><input type="number" placeholder="0" name="price" class="price" id="price" onkeyup="getInput()"></td>
+                  <td><input type="number" placeholder="0" name="amount" class="amount" id="amount" disabled></td>
+                  
+              </tr>
+
+              <tr style="padding-left: 20px">
+                  <td class="dashed "><div class="float">
+                      <a href="#" class="float" id="add-row">
+                          <span class="material-icons plus">add</span>
+                      </a>
+                  </div>
+              </td>
+                  <td class="dashed"></td>
+                  <td class="dashed"></td>
+                  <td class="dashed"></td>
+                  <td class="dashed"></td>
+              </tr>
+          </tbody>
+          </table>
+          <div id="sum"><input type="text" placeholder="0.00" name="total" class="total" id="total" disabled></div>
+          
+      </div>
+  </div>
+  
+  <script src="invoice.js"></script>
+  </body>
+</html>
