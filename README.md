@@ -6,3 +6,7 @@ features:
 Automate Billing: The application should automate the process of generating bills for customers purchasing plants from our store.
 Ease of Use: The software should be user-friendly, allowing our staff to input customer information and purchased items easily.
 Save and Print: Enable the option to save bills for records and print them for customers
+Charity Donation Option: Include an
+option for customers to round up their
+total to donate to a plant conservation
+or environmental charity.
