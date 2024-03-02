@@ -4,3 +4,4 @@ Our plant store, "Leafy Bills," digitalises billing processes. Currently, our ha
 HTML/CSS/JavaScript for frontend, PDF generation library (e.g., PDFKit)
 features:
 Automate Billing: The application should automate the process of generating bills for customers purchasing plants from our store.
+Ease of Use: The software should be user-friendly, allowing our staff to input customer information and purchased items easily.
