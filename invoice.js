@@ -68,3 +68,4 @@ document.getElementById('downloadPdf').addEventListener('click', function() {
     // Then call html2pdf with the element and options
     html2pdf().from(invoiceElement).set(options).save();
   });
+  
