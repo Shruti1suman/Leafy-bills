@@ -61,7 +61,7 @@ document.getElementById('downloadPdf').addEventListener('click', function() {
 
         filename: 'Leafy Bills.pdf',
         html2canvas: { scale: 2 },
-        jsPDF: {format: 'a4', orientation: 'portrait' }
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
       };
 
     // Then call html2pdf with the element and options
