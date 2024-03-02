@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+   
     <link rel="stylesheet" href="bill.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     
-    <div class="invoice-container">
+    <div id="bill" class="invoice-container">
         <H1>LEAFY BILLS</H1>
       <div class="invoice-header">
     
           <div class="title-date">
             <h3 class="title">Customer Name:</h3><form> <input type="text" placeholder="Enter  Customer Name">
+              
               <P>DATE:</P>
+              
               <FORM>
                 <INPUT TYPE="DATE">
               </FORM>
           </div>
-          <div class="space"></div>
+         
+          <div class="space"> </div>
           <p class="invoice-number"></p>
-          <img src="bill_image.jpg" align="right" height=200 width="200">
+
+          <img src="bill_image.jpg" align="top-right" height=200 width="200">
+         
 
       </div>
-          
+     
       <div class="invoice-body">
           <table>
               <thead>
@@ -63,7 +68,7 @@
           </tbody>
           </table>
           <div id="sum"><input type="text" placeholder="0.00" name="total" class="total" id="total" disabled></div>
-          <p>Do you want to donate for environment Conservation charity?</p>
+          <p>Would you like to round off your bill and donate for the welfare of plants?</p>
             <input type="radio" id="yes" name="charity" value="yes">
             <label for="yes">yes</label><br>
             <input type="radio" id="no" name="charity" value="no">
@@ -71,7 +76,7 @@
 <p><h3><i>THANK YOU FOR SHOPPING WITH US!</i></h3></p>
 <P><H3>PLEASE VISIT AGAIN</H3></P>
       </div>
-      <button class="button" id="downloadPdf">Download Bill</button>
+      <button onclick="download()">Download Invoice</button>  
   </div>
     <script src="bill.js"></script>
   </body>
