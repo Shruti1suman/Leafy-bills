@@ -11,7 +11,7 @@ addNewRow =()=> {
 
     tBody.insertBefore(row, tBody.lastElementChild.previousSibling);
 }
-
+document.getElementById("customerName");
 
 
 //GET INPUTS, MULTIPLY AND GET THE ITEM PRICE
