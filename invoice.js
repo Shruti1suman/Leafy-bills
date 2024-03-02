@@ -14,7 +14,7 @@ addNewRow =()=> {
 var time=document.getElementById("customerName");
 console.log(time);
 
-
+let 
 //GET INPUTS, MULTIPLY AND GET THE ITEM PRICE
 getInput =()=> {
     var rows = document.querySelectorAll("tr.single-row");
