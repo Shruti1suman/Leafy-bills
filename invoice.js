@@ -55,17 +55,8 @@ delRow =(el)=> {
     el.parentNode.parentNode.parentNode.removeChild(el.parentNode.parentNode);
 }
 
-document.getElementById('downloadPdf').addEventListener('click', function() {
-    const invoiceElement = document.getElementById('invoice');
-    const options = {
-      margin: 1,
-      filename: 'invoice.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-    };
+var doc = new jsPDF()
 
-    // Then call html2pdf with the element and options
-    html2pdf().from(invoiceElement).set(options).save();
-  });
-  
+doc.text('Hello world!', 10, 10)
+doc.save('a4.pdf')
+
