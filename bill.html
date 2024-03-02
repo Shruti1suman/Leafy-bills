@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BILL Generator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bill.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="invoice-container">
+        <H1>LEAFY BILL</H1>
+      <div class="invoice-header">
+    
+          <div class="title-date">
+            <h3 class="title">Customer Name:</h3><form> <input type="text" placeholder="Enter  Customer Name"> </form>
+              <P>DATE:</P>
+              <FORM>
+                <INPUT TYPE="DATE">
+              </FORM>
+          </div>
+          <div class="space"></div>
+          <p class="invoice-number"></p>
+          <img src="bill_image.jpg" align="right" height=200 width="200">
+
+      </div>
+          
+      <div class="invoice-body">
+          <table>
+              <thead>
+                  <th style="padding-left:12px;">PLANT</th>
+                  <th>UNIT</th>
+                  <th>PRICE</th>
+                  <th>AMOUNT</th>
+                  <th style="text-align: right;">ACTION</th>
+              </thead>
+
+              <tbody id="table-body">
+              <tr class="single-row">
+                  <td><input type="text" placeholder="Plant Name" class="product left"></td>
+                  <td><input type="number" placeholder="0" name="unit" class="unit" id="unit" onkeyup="getInput()"></td>
+                  <td><input type="number" placeholder="0" name="price" class="price" id="price" onkeyup="getInput()"></td>
+                  <td><input type="number" placeholder="0" name="amount" class="amount" id="amount" disabled></td>
+                  <td style="text-align: right;"><span class="material-icons">delete_outline</span></td>
+              </tr>
+
+              <tr style="padding-left: 20px">
+                  <td class="dashed "><div class="float">
+                      <a href="#" class="float" id="add-row">
+                          <span class="material-icons plus">add</span>
+                      </a>
+                  </div>
+              </td>
+                  <td class="dashed"></td>
+                  <td class="dashed"></td>
+                  <td class="dashed"></td>
+                  <td class="dashed"></td>
+              </tr>
+          </tbody>
+          </table>
+          <div id="sum"><input type="text" placeholder="0.00" name="total" class="total" id="total" disabled></div>
+          <p>Do you want to donate for environment Conservation charity?</p>
+            <input type="radio" id="yes" name="charity" value="yes">
+            <label for="yes">yes</label><br>
+            <input type="radio" id="no" name="charity" value="no">
+            <label for="no">no</label><br>
+<p><h3><i>THANK YOU FOR SHOPPING WITH US!</i></h3></p>
+<P><H3>PLEASE VISIT AGAIN</H3></P>
+      </div>
+      <button class="button" id="downloadPdf">Download Bill</button>
+  </div>
+    <script src="bill.js"></script>
+  </body>
+</html>
