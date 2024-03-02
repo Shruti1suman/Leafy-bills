@@ -41,7 +41,7 @@ overallSum =()=> {
     }
 }
 
-<script>
+
     document.getElementById('downloadPdf').addEventListener('click', function() {
       const invoiceElement = document.getElementById('invoice');
       const options = {
@@ -55,5 +55,4 @@ overallSum =()=> {
       // Then call html2pdf with the element and options
       html2pdf().from(invoiceElement).set(options).save();
     });
-  </script>
-
+  
