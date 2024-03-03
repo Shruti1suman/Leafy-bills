@@ -3,8 +3,19 @@ const tBody = document.getElementById("table-body");
 addNewRow =()=> {
     const row = document.createElement("tr");
     row.className = "single-row";
-    row.innerHTML = `<td><input type="text" placeholder="Product name" class="product" id="product"></td>
-                    <td><input type="number" placeholder="0" name="unit" class="unit" id="unit" onkeyup="getInput()"></td>
+    row.innerHTML = `<td><select id="name">
+    <option value="">Plant Name</option>
+    <option value="1">Adeniums</option>
+    <option value="2">Monstera deliciosa-plant</option>
+    <option value="3">Ferns and foliage</option>
+    <option value="4">Cactus and Succelents</option>
+    <option value="5">Bamboo-palm</option>
+    <option value="6">Climbers</option>
+    <option value="7">Bonsai</option>
+    <option value="8">Bougainvillea</option>
+    </select>
+    </td>
+                    <td><input type="number" placeholder="unit" id="unit"></td>
                     <td><input type="number" placeholder="0" name="price" class="price" id="price" onkeyup="getInput()"></td>
                     <td><input type="number" placeholder="0" name="amount" class="amount" id="amount" disabled></td>
                     <td style="text-align: right;"><span class="material-icons" action="delete">delete_outline</span></td>`
@@ -57,6 +68,8 @@ tBody.addEventListener("click", (e)=>{
 delRow =(el)=> {
     el.parentNode.parentNode.parentNode.removeChild(el.parentNode.parentNode);
 }
+
+//generate pdf
 function download(){
     const pdf=document.getElementById("bill");
     html2pdf().from(pdf).save();
