@@ -40,7 +40,7 @@ getInput =()=> {
         overallSum();
 
     })
-};
+}
 
 //Get the overall sum/Total
 overallSum =()=> {
@@ -53,6 +53,7 @@ overallSum =()=> {
         document.getElementById("total").value = total;
     }
 }
+
 
 //Delete row from the table
 tBody.addEventListener("click", (e)=>{
