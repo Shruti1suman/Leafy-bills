@@ -70,7 +70,5 @@ delRow =(el)=> {
 }
 
 //generate pdf
-function download(){
-    var element = document.getElementById("bill");
-    html2pdf(element);
-}
+
+

@@ -95,9 +95,15 @@
 <P><H3>PLEASE VISIT AGAIN</H3></P>
       </div>
       <button id="button" onclick="download()">Download Invoice</button>  
-  </div>
+    </div>
     <script src="bill.js"></script>
+   
     
       
   </body>
+  <script>function download() {
+    var element = document.getElementById("bill");
+    html2pdf(element);
+   
+}</script>
 </html>
