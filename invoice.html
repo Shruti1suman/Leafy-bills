@@ -10,9 +10,11 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   </head>
   <body>
+   
     <div class="invoice-container" id="invoice">
       <div class="invoice-header">
           <div class="title-date">
+            <form id="form">
               <h2 class="title">INVOICE</h2>
               <h3 class="active">Customer Name:</h3>
               <p class="date">02/03/24</p>
@@ -33,7 +35,7 @@
 
               <tbody id="table-body">
               <tr class="single-row">
-                  <td><input type="text" placeholder="Plant Name" class="product left"></td>
+                  <td><input type="text" id="name" placeholder="Plant Name" class="product left" ></td>
                   <td><input type="number" placeholder="0" name="UNIT" class="UNIT" id="UNIT" onkeyup="getInput()"></td>
                   <td><input type="number" placeholder="0" name="PRICE" class="PRICE" id="PRICE" onkeyup="getInput()"></td>
                   <td><input type="number" placeholder="0" name="Subtotal" class="Subtotal" id="Subtotal" disabled></td>
@@ -57,8 +59,16 @@
           <div id="sum"><input type="text" placeholder="0.00" name="total" class="total" id="total" disabled></div>
           
       </div>
-      <button class="button" id="downloadPdf">Download Bill</button>
+      <button type="submit" class="button" id="downloadPdf">Download Bill</button>
   </div>
+<<<<<<< HEAD
   <script src="invoice.js"></script>
+=======
+</form>
+  <script src="invoice.js"></script>
+  
+  
+  
+>>>>>>> 4cf84551964aca7c29726a6e1b48cfd8dcc3fcec
   </body>
 </html>
