@@ -15,10 +15,11 @@ addNewRow =()=> {
     <option value="8">Bougainvillea</option>
     </select>
     </td>
-                    <td><input type="number" placeholder="unit" id="unit"></td>
-                    <td><input type="number" placeholder="0" name="price" class="price" id="price" onkeyup="getInput()"></td>
-                    <td><input type="number" placeholder="0" name="amount" class="amount" id="amount" disabled></td>
-                    <td style="text-align: right;"><span class="material-icons" action="delete">delete_outline</span></td>`
+    <td><input type="number" placeholder="0" name="unit" class="unit" id="unit" onkeyup="getInput()"></td>
+    <td><input type="number" placeholder="0" name="price" class="price" id="price" onkeyup="getInput()"></td>
+    <td><input type="number" placeholder="0" name="amount" class="amount" id="amount" disabled></td>
+    <td style="text-align: right;"><span class="material-icons" action="delete">delete_outline</span></td>`
+
 
     tBody.insertBefore(row, tBody.lastElementChild.previousSibling);
 }
@@ -40,7 +41,7 @@ getInput =()=> {
         overallSum();
 
     })
-};
+}
 
 //Get the overall sum/Total
 overallSum =()=> {
@@ -53,6 +54,7 @@ overallSum =()=> {
         document.getElementById("total").value = total;
     }
 }
+
 
 //Delete row from the table
 tBody.addEventListener("click", (e)=>{
