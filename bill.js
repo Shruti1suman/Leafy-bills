@@ -71,6 +71,6 @@ delRow =(el)=> {
 
 //generate pdf
 function download(){
-    const pdf=document.getElementById("bill");
-    html2pdf().from(pdf).save();
+    var element = document.getElementById("bill");
+    html2pdf(element);
 }
