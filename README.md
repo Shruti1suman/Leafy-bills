@@ -12,4 +12,4 @@ A local plant store needs a digital solution to generate bills for their custome
 * Donate for Charity: Donate an amount to conserve plants or to an environmental charity.
 # Resources: 
 * HTML/CSS/JavaScript for frontend
-* PDF generation library (e.g., PDFKit)
+* HTML2PDF Library
