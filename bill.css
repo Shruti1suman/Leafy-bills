@@ -164,10 +164,15 @@
   .invoice-body{
     height: 400px;
   }
-  .button{
-    height:20px;
-    width:30px;
+  #button{
+    height:30px;
+    width:80px;
     display:block;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px 50px 20px 50px;
     background-color:#650d77;
   }
   
