@@ -122,4 +122,40 @@
     color:white;
     background-color:rgb(43, 92, 43);
     margin-left:120px;
+    border-radius:15%;
+}
+.foot_panel1{
+    height:50px;
+    color:#ffffff;
+    background-color:rgb(13, 27, 13);
+    font-size:0.85rem;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.foot_panel2{
+    height:400px;
+    background-color:#0f1111;
+    color:#ffffff;
+    display:flex;
+    justify-content:space-evenly;
+}
+.foot_panel2 p{
+    font-weight:600;
+    margin-top:20px;
+    font-size:1rem;
+}
+.foot_panel2 a{
+    color:#cccccc;
+    font-size:0.85rem;
+    display:block;
+    margin-top:15px;
+}
+.foot_panel3{
+    height:100px;
+    background-color:rgb(8, 39, 8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
