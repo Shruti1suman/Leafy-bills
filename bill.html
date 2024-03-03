@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BILL Generator</title>
+    <title>Bill Generator</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,7 +18,7 @@
       <div class="invoice-header">
     
           <div class="title-date">
-            <h3 class="title">Customer Name:</h3><form> <input type="text" placeholder="Enter  Customer Name">
+            <h3 class="title">Customer Name:</h3> <input type="text" placeholder="Enter  Customer Name">
               
               <P>
                 <label for="date">DATE:
@@ -75,9 +75,11 @@
             </label>
               <tr style="padding-left: 20px">
                   <td class="dashed "><div class="float">
-                
-                      
-                  </div>
+                    <a href="#" class="float" id="add-row">
+                      <span class="material-icons plus">add</span>
+                  </a>
+              </div>
+
               </td>
                   <td class="dashed"></td>
                   <td class="dashed"></td>
@@ -87,7 +89,7 @@
           </tbody>
           </table>
           <div id="sum"><input type="text" placeholder="0.00" name="total" class="total" id="total" disabled></div>
-          <p>Would you like to round off your bill and donate for the welfare of plants?</p>
+          <p>Do you want to donate for environment Conservation charity?</p>
             <input type="radio" id="yes" name="charity" value="yes">
             <label for="yes">yes</label><br>
             <input type="radio" id="no" name="charity" value="no">
@@ -95,17 +97,14 @@
 <p><h3><i>THANK YOU FOR SHOPPING WITH US!</i></h3></p>
 <P><H3>PLEASE VISIT AGAIN</H3></P>
       </div>
-      <button id="button" onclick="download()">Download Invoice</button>  
+
+      <button id="button" onclick="download()" >Download Invoice</button>  
     </div>
     <script src="bill.js"></script>
    
     
       
   </body>
-  <script>
-   
-}</script>
-</html>
 
 </html>
 
