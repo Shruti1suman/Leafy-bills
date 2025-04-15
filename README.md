@@ -13,3 +13,6 @@ A local plant store needs a digital solution to generate bills for their custome
 # Resources: 
 * HTML/CSS/JavaScript for frontend
 * HTML2PDF Library
+
+# View the site here:
+https://shruti1suman.github.io/Leafy-bills/
