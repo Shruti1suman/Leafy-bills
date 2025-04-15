@@ -10,9 +10,10 @@ A local plant store needs a digital solution to generate bills for their custome
 * Ease of Use: The application is user-friendly, allowing customers to choose the plants of their choice and total the amount.
 * Save and Print: Save your bills and download them in pdf format.
 * Donate for Charity: Donate an amount to conserve plants or to an environmental charity.
+  
 # Resources: 
 * HTML/CSS/JavaScript for frontend
 * HTML2PDF Library
 
 # View the site here:
-https://shruti1suman.github.io/Leafy-bills/
+[Click me!](https://shruti1suman.github.io/Leafy-bills/)
